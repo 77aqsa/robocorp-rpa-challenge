@@ -17,3 +17,5 @@ testrun/*
 *.pkl
 *.xlsx
 *.html
+output
+.images

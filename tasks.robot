@@ -4,7 +4,7 @@ Documentation       Robot to solve the first challenge at rpachallenge.com,
 ...                 itself for ten times, with data taken from a provided
 ...                 Microsoft Excel file.
 
-Library             RPA.Browser.Selenium    auto_close=${FALSE}
+Library             RPA.Browser.Selenium
 Library             RPA.Excel.Files
 Library             RPA.HTTP
 
@@ -18,7 +18,7 @@ Complete the challenge
 
 *** Keywords ***
 Start the challenge
-    Open Available Browser    http://rpachallenge.com/
+    Open Available Browser    http://rpachallenge.com/    headless=${True}
     Download
     ...    https://rpachallenge.com/assets/downloadFiles/challenge.xlsx
     ...    overwrite=True
